@@ -1,0 +1,188 @@
+/* --- Global Styles & Variables --- */
+:root {
+    --primary-color: #34568B; /* Professional Blue */
+    --secondary-color: #6B7A8F; /* Steel Gray */
+    --background-color: #F4F7F6; /* Very Light Gray */
+    --text-color: #333333; /* Dark Gray */
+    --heading-color: #2C3E50; /* Dark Slate Blue/Gray */
+    --link-color: #3498DB; /* Bright Blue for links */
+    --link-hover-color: #2980B9; /* Darker Blue for link hover */
+    --border-color: #DDE2E1; /* Light Gray Border */
+    --white-color: #FFFFFF;
+    --placeholder-color: #888888;
+
+    --font-primary: 'Lato', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.7;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    font-size: 16px; /* Base font size */
+}
+
+.container {
+    max-width: 960px; /* Maximum width of the content */
+    margin: 40px auto; /* Center the container with top/bottom margin */
+    padding: 40px;
+    background-color: var(--white-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+    border-radius: 8px; /* Slightly rounded corners */
+    border: 1px solid var(--border-color);
+}
+
+/* --- Header --- */
+header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+header h1 {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    color: var(--heading-color);
+    margin-bottom: 0.5em;
+    font-size: 2.2em; /* Larger heading */
+}
+
+header .subtitle {
+    font-size: 1.1em;
+    color: var(--secondary-color);
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* --- Main Content & Sections --- */
+main section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+/* --- Lists (Components & Videos) --- */
+ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0;
+}
+
+#components ul li,
+#videos ul li {
+    margin-bottom: 15px;
+    padding-left: 25px; /* Indent list items */
+    position: relative; /* Needed for custom bullet */
+}
+
+/* Custom Bullet Point */
+#components ul li::before,
+#videos ul li::before {
+    content: '✓'; /* Checkmark or use '•' for a dot */
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    top: 1px; /* Adjust vertical alignment */
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#components strong {
+    color: var(--heading-color); /* Make component names stand out */
+    font-weight: 700; /* Bold using font-weight */
+}
+
+/* --- Links --- */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out; /* Smooth hover transition */
+}
+
+a:hover,
+a:focus {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+}
+
+/* --- Placeholders --- */
+.placeholder {
+    color: var(--placeholder-color);
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+#videos .placeholder {
+    margin-left: 5px; /* Space between link and placeholder text */
+}
+
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.9em;
+    color: var(--secondary-color);
+}
+
+/* --- Responsive Adjustments (Optional but good practice) --- */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 25px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    body {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 10px;
+        padding: 20px;
+        border-radius: 4px;
+    }
+
+     header h1 {
+        font-size: 1.6em;
+    }
+
+    header .subtitle {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    #components ul li,
+    #videos ul li {
+        padding-left: 20px; /* Slightly reduce indent on small screens */
+    }
+}
