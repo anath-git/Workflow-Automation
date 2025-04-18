@@ -1,71 +1,162 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workflow Automation Project</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-</head>
+ <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Workflow Automation Project</title>
+      <link rel="stylesheet" href="style.css">
++     <!-- Use fonts consistent with the example -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+~     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Roboto:wght@400;500&display=s  wap" rel="stylesheet">
+  </head>
 <body>
-
+<header class="site-header">
     <div class="container">
-        <header>
-            <h1>Workflow Automation with a Local AI Stack</h1>
-            <p class="subtitle">Leveraging Docker Compose, n8n, Ollama, Qdrant, and PostgreSQL</p>
-        </header>
+        <h1>Intelligent Financial Data Analysis with Local AI</h1>
+        <p class="subtitle">Harnessing Ollama, PostgreSQL, and Qdrant in Docker Swarm</p>
+    </div>
+</header>
 
-        <main>
-            <section id="description">
-                <h2>Project Description</h2>
-                <p>With Docker Compose, the process of setting up and managing a local AI stack becomes significantly easier. n8n automates workflows, connecting services. Ollama runs local LLMs, Qdrant stores vector embeddings, and PostgreSQL provides persistent data storage. Together, they form a self-contained AI environment.</p>
-                <p>This setup allows for offline AI experimentation and development. It enables the creation of complex applications that leverage LLMs and vector search without external dependencies. A Docker Compose environment can orchestrate a powerful local AI setup, integrating these key components.</p>
-            </section>
+<main>
+    <section id="overview" class="content-section">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <p>This project explores the creation of an intelligent automation environment for financial data analysis, leveraging a local AI stack. Deploying Ollama, PostgreSQL, and Qdrant within a Docker Swarm cluster, the intention is to build a robust and scalable solution for natural language interaction and semantic search over financial data, particularly focusing on FIX logs and reporting.</p>
+            <p>This focused architecture facilitates advanced data analysis, intuitive querying, and on-demand report generation, addressing key challenges in financial production support through the power of local Large Language Models and vector embeddings.</p>
+        </div>
+    </section>
 
-            <section id="components">
-                <h2>Key Components</h2>
-                <ul>
-                    <li>
-                        <strong>n8n:</strong> This tool visually constructs and executes automated processes, facilitating data exchange between various applications.
-                    </li>
-                    <li>
-                        <strong>Ollama:</strong> It enables the local execution of large language models, providing AI processing without internet access.
-                    </li>
-                    <li>
-                        <strong>Qdrant:</strong> This database specializes in storing and quickly retrieving vector data, crucial for tasks like semantic searches and enhancing AI responses.
-                    </li>
-                    <li>
-                        <strong>PostgreSQL:</strong> It reliably stores and manages data, supporting n8n's operations and potentially other application needs.
-                    </li>
-                    <li>
-                        <strong>Docker Compose:</strong> This tool allows for the simple deployment and interconnection of all these applications within a single, unified environment.
-                    </li>
-                </ul>
-            </section>
+    <section id="strengths" class="">
+        <div class="container">
+            <h2>Key Advantages</h2>
+            <ul class="feature-list">
+                <li>
+                    <strong>Natural Language Interaction:</strong> Utilize Ollama's LLMs to understand and process natural language queries for insightful data retrieval and report generation from financial data.
+                </li>
+                <li>
+                    <strong>Enhanced Semantic Search:</strong> Employ Qdrant to embed and semantically search FIX logs and other data, enabling users to find relevant information based on meaning, not just keywords.
+                </li>
+                <li>
+                    <strong>Reliable Data Management:</strong> Leverage PostgreSQL for the secure and structured storage of financial data, parsed FIX logs, and associated metadata.
+                </li>
+                <li>
+                    <strong>Scalability and Resilience:</strong> Benefit from Docker Swarm's orchestration capabilities, providing scalability, high availability, and simplified management for a production-ready environment.
+                </li>
+                <li>
+                    <strong>Focused Architecture:</strong> This design is specifically tailored for efficient data analysis, flexible querying, and streamlined reporting in financial production support scenarios.
+                </li>
+            </ul>
+        </div>
+    </section>
 
-            <section id="videos">
-                <h2>Related Videos</h2>
-                <p>Check out my video tutorials on this project:</p>
-                <ul>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer">Video 1: [Link Title Here]</a> <span class="placeholder">(Link coming soon)</span></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer">Video 2: [Link Title Here]</a> <span class="placeholder">(Link coming soon)</span></li>
-                    <!-- Add more videos as needed -->
-                </ul>
-            </section>
+    <section id="use-cases" class="content-section">
+        <div class="container">
+            <h2>Potential Applications</h2>
+            <ul class="feature-list">
+                <li>
+                    <strong>Natural Language Querying of FIX Logs:</strong> Ask questions in plain language to understand error trends, rejection reasons, and order details extracted from FIX logs.
+                </li>
+                <li>
+                    <strong>On-Demand Report Generation via Natural Language:</strong> Request and generate customized reports on trading activity, order status, and other financial data using natural language commands.
+                </li>
+                <li>
+                    <strong>Intelligent Alert Analysis:</strong> Gain context and identify potential causes of production alerts by leveraging semantic search over historical alerts and FIX log data.
+                </li>
+                <li>
+                    <strong>Knowledge Base for Production Issues:</strong> Enable support staff to quickly find solutions and information related to current problems by semantically searching embedded documentation and past resolutions.
+                </li>
+                <li>
+                    <strong>Anomaly Detection Insights:</strong> Investigate and understand financial anomalies by identifying similar past incidents and their resolutions through semantic analysis.
+                </li>
+            </ul>
+        </div>
+    </section>
 
-            <section id="resources">
-                <h2>Additional Resources</h2>
-                <p class="placeholder"><em>(Future resources and links will be added here.)</em></p>
-                <!-- Add links or content here later -->
-            </section>
-        </main>
+    <section id="technical-considerations" class="content-section alt-bg">
+        <div class="container">
+            <h2>Technical Considerations</h2>
+            <p>Building this intelligent environment involves several key technical aspects:</p>
+            <ul class="feature-list">
+                <li>
+                    <strong>Robust Data Ingestion and Embedding Pipelines:</strong> Implementing efficient processes for parsing FIX logs, extracting relevant data, and generating meaningful embeddings for Qdrant.
+                </li>
+                <li>
+                    <strong>Strategic Embedding Design:</strong> Carefully selecting what data to embed and optimizing the embedding process for effective semantic search accuracy.
+                </li>
+                <li>
+                    <strong>Data Synchronization Mechanisms:</strong> Ensuring consistency between the structured data in PostgreSQL and the vector embeddings in Qdrant.
+                </li>
+                <li>
+                    <strong>Seamless Ollama API Integration:</strong> Developing applications or scripts to effectively communicate with Ollama's API for natural language processing.
+                </li>
+                <li>
+                    <strong>Effective Prompt Engineering:</strong> Crafting precise and well-designed prompts to guide Ollama in understanding user queries and generating appropriate responses or database queries.
+                </li>
+                <li>
+                    <strong>Scalable Report Generation Logic:</strong> Defining clear methods for translating natural language report requests into data retrieval and formatting instructions.
+                </li>
+                <li>
+                    <strong>Reliable Docker Swarm Configuration:</strong> Properly setting up and managing the Docker Swarm cluster, including service definitions, networking, and storage.
+                </li>
+                <li>
+                    <strong>Comprehensive Security Measures:</strong> Implementing robust security protocols for all components, including API access and data protection.
+                </li>
+            </ul>
+        </div>
+    </section>
 
-        <footer>
-            <p>© 2024 [Your Name or Company Name]. All rights reserved.</p>
-        </footer>
-    </div> <!-- /container -->
+    <section id="challenges" class="content-section">
+        <div class="container">
+            <h2>Potential Challenges</h2>
+            <p>The development of this project presents several potential challenges:</p>
+            <ul class="feature-list">
+                <li>
+                    <strong>Complexity of Integration:</strong> Seamlessly integrating diverse technologies like FIX protocol handling, databases, vector stores, and LLMs.
+                </li>
+                <li>
+                    <strong>Data Consistency and Accuracy:</strong> Ensuring the integrity and synchronization of data across different systems.
+                </li>
+                <li>
+                    <strong>Performance Optimization:</strong> Achieving efficient performance for embedding generation, semantic search, and natural language processing, especially with large datasets.
+                </li>
+                <li>
+                    <strong>Thorough Testing and Validation:</strong> Rigorously testing the accuracy and reliability of natural language queries and generated insights.
+                </li>
+                <li>
+                    <strong>Requirement for Specialized Knowledge:</strong> Demanding expertise in areas such as financial data, AI/ML concepts, and distributed systems.
+                </li>
+            </ul>
+        </div>
+    </section>
 
+    <section id="videos" class="content-section alt-bg">
+        <div class="container">
+            <h2>Related Videos</h2>
+            <p>Stay tuned for video tutorials and demonstrations related to this project:</p>
+            <div class="video-links">
+                <a href="#" class="video-link" target="_blank" rel="noopener noreferrer">Video 1: Setting up the Docker Swarm Environment (Coming Soon)</a>
+                <a href="#" class="video-link" target="_blank" rel="noopener noreferrer">Video 2: Ingesting and Embedding Financial Data (Coming Soon)</a>
+                <a href="#" class="video-link" target="_blank" rel="noopener noreferrer">Video 3: Natural Language Querying with Ollama and Qdrant (Coming Soon)</a>
+                <a href="#" class="video-link" target="_blank" rel="noopener noreferrer">Video 4: On-Demand Report Generation Examples (Coming Soon)</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources" class="content-section">
+        <div class="container">
+            <h2>Further Resources</h2>
+            <p>
+                (Links to relevant documentation, libraries, and articles will be added here.)
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>© 2025 Apurba Nath. All Rights Reserved.</p>
+    </div>
+</footer>
 </body>
-</html>
